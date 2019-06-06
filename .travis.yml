@@ -6,7 +6,7 @@ services:
 language: bash
 
 before_script:
-    - "docker build -t Lofmir/autobuilds ."
+    - "docker build -t lofmir/autobuilds ."
     - "docker container run --detach --publish 8080:80 Lofmir/autobuilds"
     - docker ps
 
