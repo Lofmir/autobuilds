@@ -7,7 +7,7 @@ language: bash
 
 before_script:
     - "docker build -t lofmir/autobuilds ."
-    - "docker container run --detach --publish 8080:80 Lofmir/autobuilds"
+    - "docker container run --detach --publish 8080:80 lofmir/autobuilds"
     - docker ps
 
 script:
